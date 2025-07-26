@@ -22,19 +22,18 @@ Here's an overview of the interactive Tableau dashboard, showcasing the distribu
 
 ![Overall Dashboard View](images/dashboard_overview.png)
 
-## Interactive Exploration
+## 💡 Interactive Exploration
 
-The dashboard is designed for dynamic exploration. Clicking on a specific iPhone model (e.g., iPhone 12 Pro Max, iPhone 13, iPhone 14 Pro) highlights its specific complaint profile across all relevant charts.
+The dashboard is designed for dynamic exploration. Clicking on a specific iPhone model (e.g., iPhone 12 Pro Max, iPhone 14 Pro Max, iPhone 15 Pro Max) highlights its specific complaint profile across all relevant charts.
 
 * **iPhone 12 Pro Max Complaint Profile:**
     ![Dashboard Filtered by iPhone 12 Pro Max](images/dashboard_iphone_12_pro_max_filter.png)
 
-* **iPhone 13 Complaint Profile:**
-    ![Dashboard Filtered by iPhone 13](images/dashboard_iphone_13_filter.png)
+* **iPhone 14 Pro Max Complaint Profile:**
+    ![Dashboard Filtered by iPhone 14 Pro Max](images/dashboard_iphone_14_pro_max_filter.png)
 
-* **iPhone 14 Pro Complaint Profile:**
-    ![Dashboard Filtered by iPhone 14 Pro](images/dashboard_iphone_14_pro_filter.png)
-
+* **iPhone 15 Pro Max Complaint Profile:**
+    ![Dashboard Filtered by iPhone 15 Pro Max](images/dashboard_iphone_15_pro_max_filter.png)
 ## Project Flow & Methodology
 
 The project followed a structured data science methodology:
@@ -92,8 +91,8 @@ renewed-iphones-complaint-analysis/
 ├── images/                           # Folder containing all screenshots used in this README.
 │   ├── dashboard_overview.png
 │   ├── dashboard_iphone_12_pro_max_filter.png
-│   ├── dashboard_iphone_13_filter.png
-│   ├── dashboard_iphone_14_pro_filter.png
+│   ├── dashboard_iphone_14_pro_max_filter.png
+│   ├── dashboard_iphone_15_pro_max_filter.png
 │   ├── notebook_sentiment_analysis_output.png
 │   ├── notebook_topic_extraction_output.png
 │   ├── notebook_model_cleaning_output.png
