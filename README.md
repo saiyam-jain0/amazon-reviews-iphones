@@ -20,20 +20,20 @@ This project aims to identify and analyze the primary complaint drivers for rene
 
 Here's an overview of the interactive Tableau dashboard, showcasing the distribution of star ratings, complaint types, and trends over time:
 
-![Overall Dashboard View](images/dashboard_overview.jpg)
+![Overall Dashboard View](images/dashboard_overview.png)
 
 ## Interactive Exploration
 
 The dashboard is designed for dynamic exploration. Clicking on a specific iPhone model (e.g., iPhone 12 Pro Max, iPhone 14 Pro Max, iPhone 15 Pro Max) highlights its specific complaint profile across all relevant charts.
 
 * **iPhone 12 Pro Max Complaint Profile:**
-    ![Dashboard Filtered by iPhone 12 Pro Max](images/dashboard_iphone_12_pro_max_filter.jpg)
+    ![Dashboard Filtered by iPhone 12 Pro Max](images/dashboard_iphone_12_pro_max_filter.png)
 
 * **iPhone 14 Pro Max Complaint Profile:**
-    ![Dashboard Filtered by iPhone 14 Pro Max](images/dashboard_iphone_14_pro_max_filter.jpg)
+    ![Dashboard Filtered by iPhone 14 Pro Max](images/dashboard_iphone_14_pro_max_filter.png)
 
 * **iPhone 15 Pro Max Complaint Profile:**
-    ![Dashboard Filtered by iPhone 15 Pro Max](images/dashboard_iphone_15_pro_max_filter.jpg)
+    ![Dashboard Filtered by iPhone 15 Pro Max](images/dashboard_iphone_15_pro_max_filter.png)
 
 ## Project Flow & Methodology
 
@@ -44,7 +44,7 @@ The project followed a structured data science methodology:
 * Customer reviews for renewed iPhones were sourced from relevant platforms (e.g., e-commerce sites, tech forums).
 * An automated script (details in the `clean_code.ipynb` notebook) was used to systematically extract review text, star ratings, and associated metadata.
 * **Multi-language Review Translation:** Identified and translated Spanish reviews to ensure comprehensive analysis of all customer feedback.
-    ![Translated Reviews Output](images/notebook_translation_output.jpg)
+    ![Translated Reviews Output](images/notebook_translation_output.png)
     *Description: A DataFrame snippet demonstrating the in-place translation of Spanish reviews to English, ensuring all feedback contributes to the analysis.*
 
 ### 2. Data Preprocessing & Cleaning
@@ -64,7 +64,7 @@ This crucial phase transformed raw, unstructured data into a clean, analysis-rea
 
 * **Feature Engineering:**
     * **Complaint Topic Extraction (LDA):** Utilized Latent Dirichlet Allocation (LDA) to group similar complaints into distinct "Final Topics" (e.g., Battery Life & Charging, Screen & Cosmetic Condition, Seller & Carrier Unreliability). This was a critical step in turning free-text complaints into categorizable data.
-        ![LDA Topic Words Examples](images/notebook_lda_topic_words_examples.jpg)
+        ![LDA Topic Words Examples](images/notebook_lda_topic_words_examples.png)
         *Description: Displays examples of word clusters for different numbers of topics (e.g., 2, 3, 5), showcasing the words that define each potential complaint theme before selecting the optimal number.*
         ![Optimal Number of Topics Graph](images/notebook_optimal_topics_graph.png)
         *Description: A plot illustrating the coherence or perplexity score for various numbers of topics, used to determine the optimal number of topics for the LDA model.*
@@ -95,15 +95,15 @@ The processed and analyzed data was then leveraged to create an interactive Tabl
 ```text
 renewed-iphones-complaint-analysis/
 ├── images/                           # Folder containing all screenshots used in this README.
-│   ├── dashboard_overview.jpg
-│   ├── dashboard_iphone_12_pro_max_filter.jpg
-│   ├── dashboard_iphone_14_pro_max_filter.jpg
-│   ├── dashboard_iphone_15_pro_max_filter.jpg
+│   ├── dashboard_overview.png
+│   ├── dashboard_iphone_12_pro_max_filter.png
+│   ├── dashboard_iphone_14_pro_max_filter.png
+│   ├── dashboard_iphone_15_pro_max_filter.png
 │   ├── notebook_bigram_creation_output.png
-│   ├── notebook_lda_topic_words_examples.jpg
+│   ├── notebook_lda_topic_words_examples.png
 │   ├── notebook_optimal_topics_graph.png
 │   ├── notebook_text_preprocessing_output.png
-│   └── notebook_translation_output.jpg
+│   └── notebook_translation_output.png
 ├── clean_code.ipynb                  # notebook for initial data cleaning and preprocessing.
 ├── dashboard.twbx                    # Tableau Packaged Workbook.
 ├── dashboard_ready_data.csv          # Final data for dashboard use.
