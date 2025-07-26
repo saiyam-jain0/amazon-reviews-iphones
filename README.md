@@ -16,26 +16,26 @@ This project aims to identify and analyze the primary complaint drivers for rene
 
 * **Demo Video:** [Click here to watch a demo of the interactive dashboard.](YOUR_DEMO_VIDEO_LINK_HERE)
 
-##  Dashboard Preview
+## Dashboard Preview
 
 Here's an overview of the interactive Tableau dashboard, showcasing the distribution of star ratings, complaint types, and trends over time:
 
-[cite_start]![Overall Dashboard View](images/dashboard_overview.jpg) [cite: 4]
+![Overall Dashboard View](images/dashboard_overview.jpg)
 
-##  Interactive Exploration
+## Interactive Exploration
 
 The dashboard is designed for dynamic exploration. Clicking on a specific iPhone model (e.g., iPhone 12 Pro Max, iPhone 14 Pro Max, iPhone 15 Pro Max) highlights its specific complaint profile across all relevant charts.
 
 * **iPhone 12 Pro Max Complaint Profile:**
-    [cite_start]![Dashboard Filtered by iPhone 12 Pro Max](images/dashboard_iphone_12_pro_max_filter.jpg) [cite: 1]
+    ![Dashboard Filtered by iPhone 12 Pro Max](images/dashboard_iphone_12_pro_max_filter.jpg)
 
 * **iPhone 14 Pro Max Complaint Profile:**
-    [cite_start]![Dashboard Filtered by iPhone 14 Pro Max](images/dashboard_iphone_14_pro_max_filter.jpg) [cite: 2]
+    ![Dashboard Filtered by iPhone 14 Pro Max](images/dashboard_iphone_14_pro_max_filter.jpg)
 
 * **iPhone 15 Pro Max Complaint Profile:**
-    [cite_start]![Dashboard Filtered by iPhone 15 Pro Max](images/dashboard_iphone_15_pro_max_filter.jpg) [cite: 3]
+    ![Dashboard Filtered by iPhone 15 Pro Max](images/dashboard_iphone_15_pro_max_filter.jpg)
 
-##  Project Flow & Methodology
+## Project Flow & Methodology
 
 The project followed a structured data science methodology:
 
@@ -44,7 +44,7 @@ The project followed a structured data science methodology:
 * Customer reviews for renewed iPhones were sourced from relevant platforms (e.g., e-commerce sites, tech forums).
 * An automated script (details in the `clean_code.ipynb` notebook) was used to systematically extract review text, star ratings, and associated metadata.
 * **Multi-language Review Translation:** Identified and translated Spanish reviews to ensure comprehensive analysis of all customer feedback.
-    [cite_start]![Translated Reviews Output](images/notebook_translation_output.jpg) [cite: 9]
+    ![Translated Reviews Output](images/notebook_translation_output.jpg)
     *Description: A DataFrame snippet demonstrating the in-place translation of Spanish reviews to English, ensuring all feedback contributes to the analysis.*
 
 ### 2. Data Preprocessing & Cleaning
@@ -54,19 +54,19 @@ This crucial phase transformed raw, unstructured data into a clean, analysis-rea
 * **Text Normalization:** Lowercasing, removal of punctuation, special characters, and numbers from review text to standardize the data.
 * **Stop Word Removal:** Elimination of common words (e.g., "the", "a", "is") that do not contribute to meaningful insights.
 * **Lemmatization/Stemming:** Reducing words to their base form to aggregate similar terms.
-    [cite_start]![Text Preprocessing Output](images/notebook_text_preprocessing_output.png) [cite: 8]
+    ![Text Preprocessing Output](images/notebook_text_preprocessing_output.png)
     *Description: An example showing the effects of the text preprocessing pipeline, including the removal of punctuation and stop words, and application of lemmatization.*
 * **Bigram Creation:** Generated significant two-word phrases (bigrams) to capture more nuanced meanings in the reviews.
-    [cite_start]![Bigram Creation Output](images/notebook_bigram_creation_output.png) [cite: 5]
+    ![Bigram Creation Output](images/notebook_bigram_creation_output.png)
     *Description: A visual representation of common bigrams created from the review text, enhancing the understanding of frequently co-occurring terms.*
 * **Sentiment Analysis:** Applying a sentiment model to quantify the emotional tone (positive, negative, neutral) of each review, providing a numerical 'Sentiment Score' and 'Negative Sentiment Rate'.
     *Description: Screenshot of the DataFrame snippet showing newly added sentiment scores and rates, as a result of the sentiment analysis step.*
 
 * **Feature Engineering:**
     * **Complaint Topic Extraction (LDA):** Utilized Latent Dirichlet Allocation (LDA) to group similar complaints into distinct "Final Topics" (e.g., Battery Life & Charging, Screen & Cosmetic Condition, Seller & Carrier Unreliability). This was a critical step in turning free-text complaints into categorizable data.
-        [cite_start]![LDA Topic Words Examples](images/notebook_lda_topic_words_examples.jpg) [cite: 6]
+        ![LDA Topic Words Examples](images/notebook_lda_topic_words_examples.jpg)
         *Description: Displays examples of word clusters for different numbers of topics (e.g., 2, 3, 5), showcasing the words that define each potential complaint theme before selecting the optimal number.*
-        [cite_start]![Optimal Number of Topics Graph](images/notebook_optimal_topics_graph.png) [cite: 7]
+        ![Optimal Number of Topics Graph](images/notebook_optimal_topics_graph.png)
         *Description: A plot illustrating the coherence or perplexity score for various numbers of topics, used to determine the optimal number of topics for the LDA model.*
     * **Model Name Cleaning:** Standardizing and shortening iPhone model names (e.g., "iPhone 12 Pro Max" to "12 Pro Max") for better readability and consistent categorization in visualizations.
         *Description: Screenshot of the Python code snippet for the `REPLACE()` function or a similar cleaning logic, along with its output demonstrating the cleaner, shorter model names used in the dashboard.*
@@ -86,7 +86,7 @@ Initial analysis was performed to understand the data's characteristics and iden
 
 The processed and analyzed data was then leveraged to create an interactive Tableau dashboard, facilitating stakeholder exploration and decision-making based on the insights derived from the data.
 
-* [cite_start]**Data Connection:** The cleaned `dashboard_ready_data.csv` [cite: 1] was connected to Tableau.
+* **Data Connection:** The cleaned `dashboard_ready_data.csv` was connected to Tableau.
 * **Visualization Design:** Charts were meticulously designed to address key business questions related to complaint drivers.
 * **Interactivity:** Dashboard actions were implemented to allow users to filter the entire dashboard by selecting a specific iPhone model, enabling dynamic and granular analysis.
 
@@ -104,10 +104,10 @@ renewed-iphones-complaint-analysis/
 │   ├── notebook_optimal_topics_graph.png
 │   ├── notebook_text_preprocessing_output.png
 │   └── notebook_translation_output.jpg
-[cite_start]├── clean_code.ipynb                  # notebook for initial data cleaning and preprocessing. [cite: 10]
-[cite_start]├── dashboard.twbx                    # Tableau Packaged Workbook. [cite: 1]
-[cite_start]├── dashboard_ready_data.csv          # Final data for dashboard use. [cite: 1]
-[cite_start]├── final.ipynb                       # Final EDA, sentiment, and topic modeling. [cite: 11]
+├── clean_code.ipynb                  # notebook for initial data cleaning and preprocessing.
+├── dashboard.twbx                    # Tableau Packaged Workbook.
+├── dashboard_ready_data.csv          # Final data for dashboard use.
+├── final.ipynb                       # Final EDA, sentiment, and topic modeling.
 └── README.md                         # This file.
 ```
 
