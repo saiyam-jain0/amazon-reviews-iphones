@@ -1,10 +1,10 @@
 # Renewed iPhones Complaint Analysis: Uncovering Key Customer Pain Points
 
-## 🚀 Project Overview
+## Project Overview
 
 This project aims to identify and analyze the primary complaint drivers for renewed iPhones based on customer review data. By transforming raw, unstructured text reviews into actionable insights, this analysis helps pinpoint specific issues related to different iPhone models, enabling targeted improvements for product management, quality control, and customer satisfaction. The project encompasses data extraction, robust preprocessing, exploratory data analysis (EDA), and interactive dashboard visualization.
 
-## ✨ Key Features
+## Key Features
 
 * **Automated Review Extraction:** Efficiently gathers customer reviews.
 * **Comprehensive Data Preprocessing:** Handles missing values, text cleaning, sentiment analysis, and feature engineering.
@@ -12,17 +12,17 @@ This project aims to identify and analyze the primary complaint drivers for rene
 * **Interactive Dashboard:** Provides a dynamic platform for stakeholders to explore complaint trends across models and time.
 * **Actionable Insights:** Pinpoints specific models and complaint types requiring attention.
 
-## 📺 Project Demo & Live Access
+## Project Demo & Live Access
 
 * **Demo Video:** [Click here to watch a demo of the interactive dashboard.](YOUR_DEMO_VIDEO_LINK_HERE)
 
-## 📈 Dashboard Preview
+##  Dashboard Preview
 
 Here's an overview of the interactive Tableau dashboard, showcasing the distribution of star ratings, complaint types, and trends over time:
 
 [cite_start]![Overall Dashboard View](images/dashboard_overview.jpg) [cite: 4]
 
-## 💡 Interactive Exploration
+##  Interactive Exploration
 
 The dashboard is designed for dynamic exploration. Clicking on a specific iPhone model (e.g., iPhone 12 Pro Max, iPhone 14 Pro Max, iPhone 15 Pro Max) highlights its specific complaint profile across all relevant charts.
 
@@ -35,7 +35,7 @@ The dashboard is designed for dynamic exploration. Clicking on a specific iPhone
 * **iPhone 15 Pro Max Complaint Profile:**
     [cite_start]![Dashboard Filtered by iPhone 15 Pro Max](images/dashboard_iphone_15_pro_max_filter.jpg) [cite: 3]
 
-## 🛠️ Project Flow & Methodology
+##  Project Flow & Methodology
 
 The project followed a structured data science methodology:
 
