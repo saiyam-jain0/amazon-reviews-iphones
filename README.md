@@ -16,7 +16,7 @@ This project aims to identify and analyze the primary complaint drivers for rene
 
 * **Demo Video:** [Click here to watch a demo of the interactive dashboard.](YOUR_DEMO_VIDEO_LINK_HERE)
 
-## Dashboard Preview
+## 📈 Dashboard Preview
 
 Here's an overview of the interactive Tableau dashboard, showcasing the distribution of star ratings, complaint types, and trends over time:
 
@@ -42,7 +42,7 @@ The project followed a structured data science methodology:
 ### 1. Data Extraction & Collection
 
 * Customer reviews for renewed iPhones were sourced from relevant platforms (e.g., e-commerce sites, tech forums).
-* An automated script (details in the `clean_code.ipynb` notebook) was used to systematically extract review text, star ratings, and associated metadata.
+* An automated script (details in the [`clean_code.ipynb`](clean_code.ipynb) notebook) was used to systematically extract review text, star ratings, and associated metadata.
 * **Multi-language Review Translation:** Identified and translated Spanish reviews to ensure comprehensive analysis of all customer feedback.
     ![Translated Reviews Output](images/notebook_translation_output.png)
     *Description: A DataFrame snippet demonstrating the in-place translation of Spanish reviews to English, ensuring all feedback contributes to the analysis.*
@@ -86,7 +86,7 @@ Initial analysis was performed to understand the data's characteristics and iden
 
 The processed and analyzed data was then leveraged to create an interactive Tableau dashboard, facilitating stakeholder exploration and decision-making based on the insights derived from the data.
 
-* **Data Connection:** The cleaned `dashboard_ready_data.csv` was connected to Tableau.
+* **Data Connection:** The cleaned [`dashboard_ready_data.csv`](dashboard_ready_data.csv) was connected to Tableau.
 * **Visualization Design:** Charts were meticulously designed to address key business questions related to complaint drivers.
 * **Interactivity:** Dashboard actions were implemented to allow users to filter the entire dashboard by selecting a specific iPhone model, enabling dynamic and granular analysis.
 
@@ -119,7 +119,7 @@ renewed-iphones-complaint-analysis/
     cd renewed-iphones-complaint-analysis
     ```
 2.  **View the Dashboard:**
-    * Download the `dashboard.twbx` file.
+    * Download the [`dashboard.twbx`](dashboard.twbx) file.
     * Open it using Tableau Public Desktop Edition (free download available from Tableau's website) or Tableau Desktop.
 
 ## Technologies Used
@@ -131,17 +131,16 @@ renewed-iphones-complaint-analysis/
     * `nltk` (Natural Language Toolkit): Essential for advanced text preprocessing steps such as tokenization, stop word removal, lemmatization (e.g., `WordNetLemmatizer`), and potentially lexicon-based sentiment analysis (e.g., `VADER`).
     * `textblob`: For straightforward, rule-based sentiment analysis.
     * `scikit-learn`: A fundamental machine learning library used for:
-        * **Text Vectorization**: Converting raw text into numerical features using models like `TfidfVectorizer` or `CountVectorizer`
+        * **Text Vectorization**: Converting raw text into numerical features using models like `TfidfVectorizer` or `CountVectorizer`.
         * **Topic Modeling**: Implementing `LatentDirichletAllocation` (LDA) to uncover the hidden complaint themes from the review text.
     * `gensim`: A specialized library for scalable topic modeling (including LDA) and natural language processing tasks.
     * `matplotlib`: For creating foundational static plots and charts essential for Exploratory Data Analysis (EDA).
     * `seaborn`: Built upon Matplotlib, providing a high-level interface for generating aesthetically pleasing and informative statistical graphics for enhanced EDA.
 
-* **Google Colaboratory (Colab) / Jupyter Notebook:** Used as the interactive development environment for coding, executing analytical steps, and documenting the data preprocessing and EDA workflows (`clean_code.ipynb`, `final.ipynb`). Google Colab was specifically utilized to leverage its GPU capabilities, which were essential for efficiently processing computationally intensive tasks and preventing CPU-related crashes.
-* **Tableau Public Desktop Edition:** Utilized for designing and building the interactive, visually compelling dashboard (`dashboard.twbx`) that presents the final insights.
+* **Google Colaboratory (Colab) / Jupyter Notebook:** Used as the interactive development environment for coding, executing analytical steps, and documenting the data preprocessing and EDA workflows ([`clean_code.ipynb`](clean_code.ipynb), [`final.ipynb`](final.ipynb)). Google Colab was specifically utilized to leverage its GPU capabilities, which were essential for efficiently processing computationally intensive tasks and preventing CPU-related crashes.
+* **Tableau Public Desktop Edition:** Utilized for designing and building the interactive, visually compelling dashboard ([`dashboard.twbx`](dashboard.twbx)) that presents the final insights.
+
 ## About Me
 
 * **Saiyam Jain**
 * **Connect with me:** [LinkedIn](https://www.linkedin.com/in/saiyam-jain-368a23294/) | [GitHub](https://github.com/saiyam-jain0)
-
----
