@@ -14,9 +14,13 @@ This project aims to identify and analyze the primary complaint drivers for rene
 
 ## Project Demo & Live Access
 
-* **Demo Video:** [Click here to watch a demo of the interactive dashboard.](YOUR_DEMO_VIDEO_LINK_HERE)
+* **Demo Video:** [Click here to watch a demo of the full project.](YOUR_DEMO_VIDEO_LINK_HERE)
 
-## 📈 Dashboard Preview
+## Interactive Tableau Dashboard
+
+An interactive dashboard was created to visualize the key findings from the analysis of 6,000+ customer reviews. The dashboard allows for a deep dive into the main complaint categories, with filtering by iPhone model and trends over time.
+
+### [Click Here to View the Live Interactive Dashboard on Tableau Public](https://public.tableau.com/app/profile/saiyam.jain5123/viz/renewediphoneskeycomplaints/Dashboard1)
 
 Here's an overview of the interactive Tableau dashboard, showcasing the distribution of star ratings, complaint types, and trends over time:
 
